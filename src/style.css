@@ -1,0 +1,213 @@
+/**
+* ! Changing default colour of the 
+**/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-image: url(9.jpg);  
+}
+
+
+
+i{
+    cursor: pointer;
+}
+a{
+    color: black;
+}
+
+/**
+* ! Nav bar styles are here 
+**/
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FF4261;
+    color: rgb(39, 39, 39);
+    padding: 25px 60px;
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+
+.cart{
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 4px;
+}
+
+.cartAmount{
+    top: -15px;
+    right: -10px;
+    position: absolute;
+    font-size: 16px;
+    color: black;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: red;
+}
+
+/**
+* ! Shop Items sytles are here . 
+**/
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px); /*Type "gtc" and press TAB*/
+    gap: 30px;
+    justify-content: center;
+}
+
+@media (max-width: 1000px){
+    .shop{
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width: 500px){
+    .shop{
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+
+.item {
+    border: 2px solid #FF4261;
+    border-radius: 10px;
+    background-color: #FF4261;
+    
+    
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /** type "jcsb" then press Tab, this works on X-axis**/
+    align-items: center; /**y axis**/
+}
+
+.button{
+    display: flex;
+    flex-direction: row; /* row is default*/
+    gap: 8px;
+    font-size: 18px; /* 16px is default*/
+}
+
+.bi-bag-dash{
+    color: rgb(137, 3, 3);
+}
+
+.bi-bag-plus-fill{
+    color: green;
+}
+
+.bi-cart4{
+    color: #FF4261;
+}
+
+
+.image{
+    border-radius: 10.5px;
+    padding: 2px;
+}
+
+/**
+* ! Footer sytle is here !
+**/
+.footer{
+    padding-top: 30px;
+    bottom: 0;
+    
+}
+.footerchild{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FF4261;
+    font-weight: bolder;
+    font-family: cursive;
+    padding: 20px;
+    bottom: 0;
+}
+
+/**
+* ! Style rules for Label some  cart buttons
+**/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.Homebtn{
+    background-color: #FF4261;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/**
+*! styles rules for  Cart-items
+**/
+.bi-x-square{
+    color: rgb(137, 3, 3);
+    font-weight: bold;
+}
+.shopping-cart{
+    
+    display: grid;
+    grid-template-columns: repeat(1,320px);
+    /* justify-content: space-between;
+    /* align-items: center; */
+    gap: 20px;
+    /* border: 2px solid #000000;  */
+    
+}
+
+.cart-item{
+    width: 275px;
+    /* border: 2px solid #FF4261; */
+    border-radius: 10px;
+    display: flex;
+    background-color: #FF4261;
+    justify-content: center;
+    /* border: 2px solid #000000; */
+}
+
+.tittle-price-x{
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #1d0be1;
+
+}
+
+.tittle-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-price{
+    background-color: #FF4261;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
